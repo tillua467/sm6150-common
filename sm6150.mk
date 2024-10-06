@@ -246,6 +246,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/ueventd.xiaomi_sm6150.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
 
+# Updater
+AB_OTA_UPDATER := false
+
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
