@@ -91,6 +91,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Display
+TARGET_USE_AIDL_QTI_MEMTRACK := true
+
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
