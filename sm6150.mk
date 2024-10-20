@@ -310,8 +310,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     CarrierConfigOverlay \
     libjson \
-    libril \
-    librilutils \
     librmnetctl \
     libsqlite.vendor
 
