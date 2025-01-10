@@ -33,10 +33,12 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio FX modules
+# Audio FX modules - from Redmi K30 4G V13.0.6.0.SGHCNXM
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
+vendor/lib64/soundfx/libdirac.so
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libshoebox.so
 
 # Bluetooth
