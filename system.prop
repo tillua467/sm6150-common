@@ -30,3 +30,10 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+# Device indetify
+ro.infinity.soc=Snapdragon 730G
+ro.infinity.battery=4500 mAh
+ro.infinity.display=1080 x 2400, 120 Hz
+ro.infinity.camera=64MP + 8MP + 2MP + 2MP
+ro.product.marketname=Redmi K30
