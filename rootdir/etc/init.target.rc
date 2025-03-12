@@ -27,6 +27,14 @@
 #
 #
 
+on property:vendor.post_boot.parsed=1Add commentMore actions
+     # Gamebar 2.0
+     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+     chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps 
+     chown system system /sys/class/power_supply/battery/temp
+     chmod 0660 /sys/class/power_supply/battery/temp
+
+
 on early-init
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.early_init.sh
     setprop ro.boot.hardware.revision ${ro.boot.hwc}_${ro.boot.hwlevel}_${ro.boot.hwversion}
