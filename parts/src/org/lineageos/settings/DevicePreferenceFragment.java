@@ -56,15 +56,17 @@ public class DevicePreferenceFragment extends PreferenceFragment {
         mPrefPillStyleNotch.setOnPreferenceChangeListener(PrefListener);
     }
 
+
     @Override
     public void onResume() {
-        super.onResume();
-
-	try {
+    super.onResume();
+    if (mOverlayService != null) {
+        try {
             mPrefPillStyleNotch.setChecked(
                 !mOverlayService.getOverlayInfo(OVERLAY_NO_FILL_PACKAGE, 0).isEnabled());
         } catch (RemoteException e) {
             // We can do nothing
+            }
         }
     }
 
@@ -75,7 +77,7 @@ public class DevicePreferenceFragment extends PreferenceFragment {
                     final String key = preference.getKey();
 
 		    if (KEY_PILL_STYLE_NOTCH.equals(key)) {
-                       try {
+                    try {
                             mOverlayService.setEnabled(
                             OVERLAY_NO_FILL_PACKAGE, !(boolean) value, 0);
                     } catch (RemoteException e) {
